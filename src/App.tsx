@@ -1,5 +1,6 @@
 import './App.css';
-import {Footer, Logo} from './components';
+import {Logo} from './components/Logo';
+import {Footer} from './components/Footer';
 
 function App() {
     return (
