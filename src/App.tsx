@@ -1,12 +1,13 @@
 import './App.css';
-import {Footer} from './components';
+import {Footer, Logo} from './components';
 
 function App() {
-  return (
-    <div>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div>
+            <Logo/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
