@@ -1,10 +1,10 @@
-import React from 'react';
 import './App.css';
+import {Footer} from './components';
 
 function App() {
   return (
     <div>
-      g
+      <Footer/>
     </div>
   );
 }
