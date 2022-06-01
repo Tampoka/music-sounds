@@ -1,4 +1,4 @@
-import styles from 'Key.module.css';
+import styles from './Key.module.css';
 import {NoteType} from '../../domain/note';
 import {FC} from 'react';
 import clsx from 'clsx';
