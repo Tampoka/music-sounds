@@ -4,7 +4,7 @@ const useEffectOnce=(effect:EffectCallback)=>{
     useEffect(effect,[])
 }
 
-type Effect=(...args:unknown[])=>void
+type Effect=(...args:any[])=>void
 
 export const useMount=(fn:Effect)=>{
     useEffectOnce(()=>{
