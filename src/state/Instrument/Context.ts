@@ -9,8 +9,7 @@ export type ContextValue = {
 
 export const InstrumentContext = createContext<ContextValue>({
     instrument: DEFAULT_INSTRUMENT,
-    setInstrument() {
-    }
+    setInstrument() {}
 })
 
 export const InstrumentContextConsumer=InstrumentContext.Consumer
