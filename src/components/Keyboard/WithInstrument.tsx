@@ -44,6 +44,10 @@ export const KeyboardWithInstrument = () => {
     const AudioContext = useAudioContext()!
     const { instrument } = useInstrument()
     return (
+        // <WrappedKeyboard
+        //     AudioContext={AudioContext}
+        //     instrument={instrument}
+        // />
         <WrappedKeyboard
             AudioContext={AudioContext}
             instrument={instrument}

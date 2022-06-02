@@ -1,6 +1,6 @@
 import {InstrumentContextProvider} from '../../state/Instrument/Provider';
-import {KeyboardWithInstrument} from '../Keyboard/WithInstrument';
 import {InstrumentSelector} from '../InstrumentSelector';
+import { KeyboardWithInstrument } from '../Keyboard/WithStaticInstrument';
 
 export const Playground = () => {
     return (
