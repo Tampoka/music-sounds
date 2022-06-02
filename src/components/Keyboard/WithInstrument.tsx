@@ -1,6 +1,5 @@
 import {useAudioContext} from '../AudioContextProvider/useAudioContext';
 import {useInstrument} from '../../state/Instrument/Context';
-import {SoundfontProvider} from '../../adapters/Soundfont';
 import {Keyboard} from './Keyboard';
 import {withInstrument} from '../../adapters/Soundfont/withInstrument';
 
