@@ -28,4 +28,14 @@ export const KeyboardWithInstrument = () => {
         instrument={instrument}
         render={(props) => <Keyboard {...props}/>}
     />
+
+   /* when using children instead of renderProps
+    return <SoundfontProvider
+        AudioContext={AudioContext}
+        instrument={instrument}
+      {(props) => <Keyboard {...props}/>}
+    />*/
 };
+
+//creating HOC
+
