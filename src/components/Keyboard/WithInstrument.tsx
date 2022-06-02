@@ -1,10 +1,9 @@
 import {useAudioContext} from '../AudioContextProvider/useAudioContext';
-import {useSoundfont} from '../../adapters/Soundfont/useSoundFont';
-import {Keyboard} from './Keyboard';
 import {useInstrument} from '../../state/Instrument/Context';
-import {useEffect} from 'react';
+import {SoundfontProvider} from '../../adapters/Soundfont';
+import {Keyboard} from './Keyboard';
 
-export const KeyboardWithInstrument = () => {
+/*export const KeyboardWithInstrument = () => {
     const AudioContext = useAudioContext()!
     const {instrument} = useInstrument()
     const {loading, current, play, stop, load} = useSoundfont({AudioContext})
@@ -15,6 +14,18 @@ export const KeyboardWithInstrument = () => {
 
     console.log(instrument)
     return <Keyboard loading={loading} play={play} stop={stop}/>
-};
+};*/
 
 //todo fix rerender
+
+//using renderProps
+export const KeyboardWithInstrument = () => {
+    const AudioContext = useAudioContext()!
+    const {instrument} = useInstrument()
+
+    return <SoundfontProvider
+        AudioContext={AudioContext}
+        instrument={instrument}
+        render={(props) => <Keyboard {...props}/>}
+    />
+};
